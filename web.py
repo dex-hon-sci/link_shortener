@@ -11,7 +11,8 @@ from flask import Flask, render_template, redirect, request, \
 import sqlite3
 import main
 
-host = 'http://localhost:5000/'
+host = 'https://link-shortener-x4be-master-6vcifd4szq-wm.a.run.app/'
+#host = 'http://localhost:5000/'
 #host = 'http://dex_short.link/'
 db_address = './urls.db'
 
