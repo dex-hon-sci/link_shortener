@@ -41,6 +41,8 @@ Using the app
 =============
 Unzip the file to your home directory.
 > tar –xvf link_shortener.tar
+
 Move to the working directory.
 > cd /home/Username/link_shortener
+
 The folder should have the following structure:
