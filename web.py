@@ -11,8 +11,8 @@ from flask import Flask, render_template, redirect, request, \
 import sqlite3
 import main
 
-host = 'https://link-shortener-x4be-master-6vcifd4szq-wm.a.run.app/'
-#host = 'http://localhost:5000/'
+#host = 'https://link-shortener-x4be-master-6vcifd4szq-wm.a.run.app/'
+host = 'http://localhost:5000/'
 #host = 'http://dex_short.link/'
 db_address = './urls.db'
 
@@ -65,8 +65,8 @@ def index():
             
             #make the stats page
             stats_page = host+shortcode+"/stats"
-        else: 
-            pass
+        #else: 
+        #    pass
 
         # The default output response 
         response = render_template('index2.html',short_url=short_url, 
@@ -159,7 +159,6 @@ def redirect_URL(shortcode,db_address =db_address):
     
     # save the master list of shortcode
     bag = res.fetchall()
-    
     
     # check if the shortcode exist
     if (shortcode,) in bag:
